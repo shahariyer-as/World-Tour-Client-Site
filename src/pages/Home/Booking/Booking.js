@@ -24,7 +24,7 @@ const Booking = () => {
         bookingDetails.status = "Pending"
         console.log(data)
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://grisly-zombie-69208.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -42,7 +42,7 @@ const Booking = () => {
     };
 
     const getSinglePlan = () => {
-        axios.get(`http://localhost:5000/plans/${bookingId}`)
+        axios.get(`https://grisly-zombie-69208.herokuapp.com/plans/${bookingId}`)
             .then(res => {
                 const myPlans = res.data;
                 setSinglePlan(myPlans)
