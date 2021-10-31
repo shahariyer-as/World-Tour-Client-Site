@@ -1,0 +1,20 @@
+.carousel img {
+    height: 600px;
+    margin-bottom: 5px;
+}
+
+.carousel-text h1,
+h3,
+h2 {
+    color: white;
+}
+
+.carousel-text {
+    background-color: rgba(104, 97, 97, 0.363);
+}
+
+@media screen and (max-width: 668px) {
+    .carousel img {
+        height: 250px;
+    }
+}
