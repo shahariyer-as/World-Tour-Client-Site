@@ -4,6 +4,7 @@ import { Row } from 'react-bootstrap';
 import Plans from '../Plans/Plans';
 import Banner from '../Banner/Banner';
 import usePlans from '../../../Hooks/usePlan';
+import ExtraSection from '../ExtraSection/ExtraSection';
 
 const Home = () => {
     const [plans] = usePlans();
@@ -25,6 +26,9 @@ const Home = () => {
                     </Row>
 
                 </div>
+            </div>
+            <div>
+                <ExtraSection></ExtraSection>
             </div>
         </div>
     );

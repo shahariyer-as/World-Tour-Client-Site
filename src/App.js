@@ -10,8 +10,10 @@ import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
 import PrivateRoute from './pages/Login/PrivetRouter'
 import Booking from './pages/Home/Booking/Booking';
-import MyTour from './pages/Home/MyTour/MyTour';
-import Admin from './pages/Home/Admin/Admin';
+import MyTour from './pages/MyTour/MyTour/MyTour';
+import AddPlan from './pages/AddPlans/AddPlans';
+import Admin from './pages/MyTour/Admin/Admin';
+
 
 function App() {
   return (
@@ -32,12 +34,15 @@ function App() {
             <PrivateRoute path="/book/:bookingId">
               <Booking></Booking>
             </PrivateRoute>
-            <Route path="/mytour">
+            <PrivateRoute path="/my_tour">
               <MyTour></MyTour>
-            </Route>
-            <Route path="/admin">
+            </PrivateRoute>
+            <PrivateRoute path="/add_plan">
+              <AddPlan></AddPlan>
+            </PrivateRoute>
+            <PrivateRoute path="/admin">
               <Admin></Admin>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>

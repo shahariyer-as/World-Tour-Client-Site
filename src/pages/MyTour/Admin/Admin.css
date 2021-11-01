@@ -1,0 +1,14 @@
+.manage-plan {
+    background-image: url("https://i.ibb.co/BTRPh58/aaa8.png");
+    background-position: center;
+    background-size: cover;
+    /* height: 650px; */
+    background-repeat: no-repeat;
+    color: #daae21;
+}
+
+@media screen and (max-width: 668px) {
+    .manage-plan {
+        height: 100%;
+    }
+}

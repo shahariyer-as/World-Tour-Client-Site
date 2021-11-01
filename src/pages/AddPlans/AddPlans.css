@@ -1,0 +1,23 @@
+.add-plan {
+    background-image: url("https://i.ibb.co/F3VKDkd/FSDF7.png");
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    background-repeat: no-repeat;
+}
+
+.add-plan-input input,
+textarea {
+    padding: 5px 0 5px 5px;
+    height: 50px;
+}
+
+.tourist {
+    letter-spacing: 5PX;
+}
+
+@media screen and (max-width: 668px) {
+    .add-plan {
+        height: 100%;
+    }
+}

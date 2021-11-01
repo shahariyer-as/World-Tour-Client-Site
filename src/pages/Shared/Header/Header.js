@@ -33,11 +33,12 @@ const Header = () => {
 
 
                                 {
-                                    user.email ? <div className='d-flex flex-md-row'>
-                                        <Nav.Link as={NavLink} to="/admin"> Admin Dashboard</Nav.Link>
-                                        <Nav.Link as={NavLink} to="/mytour">My Tour</Nav.Link>
-                                        <Nav.Link onClick={logOut} as={NavLink} to="/">Logout</Nav.Link>
-                                        <Nav.Link to="">{user?.displayName}</Nav.Link>
+                                    user.email ? <div className='d-md-flex flex-row'>
+
+                                        <Nav.Link as={Link} to="/add_plan">Add a plan</Nav.Link>
+                                        <Nav.Link as={Link} to="/Admin">Admin Dashboard</Nav.Link>
+                                        <Nav.Link as={Link} to="/my_tour">{user.displayName}</Nav.Link>
+                                        <Nav.Link onClick={logOut} as={Link} to="/">Logout</Nav.Link>
                                     </div> :
 
                                         <Nav.Link onClick={logOut} as={NavLink} to="/login">Login</Nav.Link>
