@@ -24,7 +24,7 @@ const Booking = () => {
         bookingDetails.status = "Pending"
         console.log(data)
 
-        fetch('https://grisly-zombie-69208.herokuapp.com/booking', {
+        fetch('https://glacial-crag-25753.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -42,7 +42,7 @@ const Booking = () => {
     };
 
     const getSinglePlan = () => {
-        axios.get(`https://grisly-zombie-69208.herokuapp.com/plans/${bookingId}`)
+        axios.get(`https://glacial-crag-25753.herokuapp.com/plans/${bookingId}`)
             .then(res => {
                 const myPlans = res.data;
                 setSinglePlan(myPlans)

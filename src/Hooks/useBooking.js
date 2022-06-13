@@ -5,7 +5,7 @@ const useBooking = () => {
     const [tour, setTour] = useState([]);
 
     const getTour = () => {
-        axios.get('http://localhost:5000/booking')
+        axios.get('https://glacial-crag-25753.herokuapp.com/booking')
             .then(res => {
                 const myTour = res.data;
                 // console.log(myTour)

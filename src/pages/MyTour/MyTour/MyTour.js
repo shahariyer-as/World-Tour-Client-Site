@@ -14,7 +14,7 @@ const MyTour = () => {
     useEffect(() => {
         const email = [user.email];
         console.log('md', email);
-        axios.post('http://localhost:5000/booking/user', email)
+        axios.post('https://glacial-crag-25753.herokuapp.com/booking/user', email)
             .then(res => {
                 setUserBooking(res.data);
                 console.log('mydat', res.data)

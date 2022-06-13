@@ -5,7 +5,7 @@ import { useState } from 'react';
 const usePlans = () => {
     const [plans, setPlans] = useState([])
     const getPlans = () => {
-        axios.get("https://grisly-zombie-69208.herokuapp.com/plans")
+        axios.get("https://glacial-crag-25753.herokuapp.com/plans")
             .then(res => {
                 const myPlans = res.data;
                 setPlans(myPlans)
